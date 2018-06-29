@@ -27,6 +27,7 @@ class App {
             let result = Mail.sendMail();
 
             res.status(200).json({ 'result': result })
+            res.send({ 'result': 'version 0.0.2' })
         });
 
 
