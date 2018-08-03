@@ -20,9 +20,7 @@ class App {
 
 
     routes() {
-       // this.app.route("/").get((req, res) => {
-         //   res.send({ 'result': 'version 0.0.2' });
-       // });
+    
         this.app.route("/").post((req, res) => {
             const message = Object.assign({}, req.body);
             mail_1.default.to = message.to;
